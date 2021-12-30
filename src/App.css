@@ -1,0 +1,214 @@
+body {
+  margin-top: 50px;
+}
+
+.app-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main-container{
+  display: grid;
+  grid-column: 2;
+  grid-auto-flow: row;
+  row-gap: 0.5em;
+}
+
+.heading-container{
+  text-align: center;
+}
+
+.login-container {
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.form-group {
+  padding: 1rem;
+  margin: auto;
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 1rem;
+}
+
+.input-control {
+  display: inline-block;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btn {
+  width: fit-content;
+  padding: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #0077f9;
+}
+
+.btn-secondary{
+  color: #000;
+  background: lightgray;
+}
+
+.btn-success {
+  color: #fff;
+  background: #28a745;
+}
+
+.btn-danger {
+  color: #fff;
+  background: #dc3545;
+}
+
+button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+header {
+  position: fixed;
+  background-color: beige;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+header * {
+  display: inline;
+}
+
+header li {
+  margin: 20px;
+}
+
+header li a {
+  color: royalblue;
+  text-decoration: none;
+}
+
+header li a:hover {
+  color: blue;
+}
+
+.referral-list {
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 1em;
+}
+
+.referral-item {
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px 1px gray;
+  background: #eee;
+}
+
+.referral-item > .header{
+  padding: 0 1em;
+}
+
+.referral-item  > .header > h1 {
+  color: #17a2b8;
+  text-transform: capitalize;
+}
+
+.referral-item > .header > h5 {
+  color: #555;
+}
+
+.referral-item > .content > p{
+  text-align: justify;
+  padding: 0 1em;
+}
+
+.form-group{
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 1em;
+}
+
+.form-group > .form-control{
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 0.5em;
+}
+
+.form-group > .form-actions{
+  text-align: center;
+}
+
+.form-control > .label{
+  font-weight: lighter;
+}
+
+textarea{
+  width: 100%;
+  resize: vertical;
+}
+
+.view-referral-container{
+  text-align: center;
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: #eee;
+}
+
+.view-referral-container > .content {
+  text-align: justify;
+}
+
+.view-referral-container > .content > p {
+  color: #555;
+}
+
+.view-referral-container > .header > h2 {
+  color: #17a2b8;
+  text-transform: capitalize;
+}
+
+.view-referral-container > .header > h5 {
+  color: #555;
+}
+
+.message {
+  text-align: center;
+  font-weight: bold;
+  color: #818182;
+}
+
+.about-container{
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: lavender;
+}
+
+.about-content-container {
+  text-align: justify;
+}
+
+.about-content-container > p {
+  color: #555;
+}
+
+.alert-container {
+  text-align: center;
+}
+
+.valid-feedback {
+  color: #28a745;
+}
+
+.invalid-feedback {
+  color: #dc3545;
+}
